@@ -1,0 +1,257 @@
+CRITICAL - 2026-05-12 16:40:04 --> CodeIgniter\HTTP\Exceptions\HTTPException: Request URI segment is out of range: "2"
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\URI.php on line 575.
+ 1 SYSTEMPATH\HTTP\URI.php(575): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Filters\InstallGuard.php(20): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-12 16:44:43 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(49): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(58): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-12 16:44:46 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(49): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(58): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-12 16:44:47 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(49): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(58): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-12 16:44:51 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:98
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(49): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(58): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-12 17:02:58 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=9652 in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'P:\\PortableApps...', 201)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-12 17:03:55 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=9652 in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'P:\\PortableApps...', 201)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-12 17:04:56 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=9652 in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'P:\\PortableApps...', 201)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(59): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-12 17:24:54 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=9652 in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'P:\\PortableApps...', 201)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(61): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(82): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(61): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(82): App\Libraries\InstallationService->testConnection(Array)
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(61): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(82): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}

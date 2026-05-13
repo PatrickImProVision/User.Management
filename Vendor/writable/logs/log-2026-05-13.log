@@ -1,0 +1,658 @@
+ERROR - 2026-05-13 03:52:44 --> pg_query(): Query failed: 
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 3 APPPATH\Libraries\InstallationService.php(392): CodeIgniter\Database\BaseConnection->query('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 4 APPPATH\Libraries\InstallationService.php(338): App\Libraries\InstallationService->executeSqlScript(Object(CodeIgniter\Database\Postgre\Connection), '-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows; recreate schema via installer SQL or pg_dump if needed)
+DROP TABLE IF EXISTS "ps_users" CASCADE;
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL);')
+ 5 APPPATH\Controllers\Install.php(191): App\Libraries\InstallationService->restoreFromWritableUninstallBackup('uninstall_2026-05-13_035121.sql')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Install->runSchema()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 04:29:43 --> pg_query(): Query failed: 
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 3 APPPATH\Libraries\InstallationService.php(406): CodeIgniter\Database\BaseConnection->query('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 4 APPPATH\Libraries\InstallationService.php(342): App\Libraries\InstallationService->executeSqlScript(Object(CodeIgniter\Database\Postgre\Connection), '-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows; recreate schema via installer SQL or pg_dump if needed)
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL);')
+ 5 APPPATH\Controllers\Install.php(191): App\Libraries\InstallationService->restoreFromWritableUninstallBackup('uninstall_2026-05-13_035121.sql')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Install->runSchema()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 04:32:56 --> pg_query(): Query failed: 
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 3 APPPATH\Libraries\InstallationService.php(406): CodeIgniter\Database\BaseConnection->query('-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows')
+ 4 APPPATH\Libraries\InstallationService.php(342): App\Libraries\InstallationService->executeSqlScript(Object(CodeIgniter\Database\Postgre\Connection), '-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows; recreate schema via installer SQL or pg_dump if needed)
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL);')
+ 5 APPPATH\Controllers\Install.php(191): App\Libraries\InstallationService->restoreFromWritableUninstallBackup('uninstall_2026-05-13_035121.sql')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Install->runSchema()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 04:35:47 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;recreate&quot;
+LINE 1: recreate schema via installer SQL or pg_dump if needed)
+        ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('recreate schema via installer SQL or pg_dump if needed)
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL)')
+ 2 APPPATH\Libraries\InstallationService.php(413): CodeIgniter\Database\BaseConnection->simpleQuery('recreate schema via installer SQL or pg_dump if needed)
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL)')
+ 3 APPPATH\Libraries\InstallationService.php(343): App\Libraries\InstallationService->executeSqlScript(Object(CodeIgniter\Database\Postgre\Connection), '-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows; recreate schema via installer SQL or pg_dump if needed)
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL);')
+ 4 APPPATH\Controllers\Install.php(191): App\Libraries\InstallationService->restoreFromWritableUninstallBackup('uninstall_2026-05-13_035121.sql')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Install->runSchema()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 04:38:38 --> pg_query(): Query failed: ERROR:  relation &quot;ps_users&quot; does not exist
+LINE 1: INSERT INTO &quot;ps_users&quot; (&quot;id&quot;,&quot;username&quot;,&quot;email&quot;,&quot;password_ha...
+                    ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL)')
+ 2 APPPATH\Libraries\InstallationService.php(413): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL)')
+ 3 APPPATH\Libraries\InstallationService.php(343): App\Libraries\InstallationService->executeSqlScript(Object(CodeIgniter\Database\Postgre\Connection), '-- Product Store backup 2026-05-13T03:51:21+00:00
+
+-- Table ps_users (data rows; recreate schema via installer SQL or pg_dump if needed)
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$d3CSnnjz.Rn6PGosdSnrqeeMabnTaCAk2R/xoxEReA2gdVeh.neKy\',\'administrator\',\'2026-05-12 20:18:22\',NULL);')
+ 4 APPPATH\Controllers\Install.php(191): App\Libraries\InstallationService->restoreFromWritableUninstallBackup('uninstall_2026-05-13_035121.sql')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Install->runSchema()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 04:57:39 --> pg_query(): Query failed: ERROR:  relation &quot;ps_users&quot; does not exist
+LINE 1: INSERT INTO &quot;ps_users&quot; (&quot;id&quot;,&quot;username&quot;,&quot;email&quot;,&quot;password_ha...
+                    ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$UKJMCCF5UrMAIOtRuHJHzu9khxAygKtDGaONgQspcnHeHGAmGfAii\',\'administrator\',\'2026-05-13 04:40:09\',NULL)')
+ 2 APPPATH\Libraries\InstallationService.php(413): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$UKJMCCF5UrMAIOtRuHJHzu9khxAygKtDGaONgQspcnHeHGAmGfAii\',\'administrator\',\'2026-05-13 04:40:09\',NULL)')
+ 3 APPPATH\Libraries\InstallationService.php(343): App\Libraries\InstallationService->executeSqlScript(Object(CodeIgniter\Database\Postgre\Connection), '-- Product Store backup 2026-05-13T04:49:02+00:00
+-- DBPrefix (Config\\Database): ps_
+-- Physical table identifiers (prefix + logical name as stored in the database):
+--   ps_users
+
+-- Table ps_users (data rows only — run preset install SQL first so tables exist.)
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$UKJMCCF5UrMAIOtRuHJHzu9khxAygKtDGaONgQspcnHeHGAmGfAii\',\'administrator\',\'2026-05-13 04:40:09\',NULL);')
+ 4 APPPATH\Controllers\Install.php(192): App\Libraries\InstallationService->restoreFromWritableUninstallBackup('uninstall_2026-05-13_044902.sql')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Install->runSchema()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 05:05:27 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;ps_users_pkey&quot;
+DETAIL:  Key (id)=(1) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "created_at", "updated_at") VALUES (\'ImProVision.Man\', \'ImProVision.Man@outlook.com\', \'$2y$10$thId7YIBhqjJLuNjGWbRJ.iQn5AeBy9YxSNbifti5sNVhqlsUH0na\', \'administrator\', \'2026-05-13 05:05:26\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "created_at", "updated_at") VALUES (\'ImProVision.Man\', \'ImProVision.Man@outlook.com\', \'$2y$10$thId7YIBhqjJLuNjGWbRJ.iQn5AeBy9YxSNbifti5sNVhqlsUH0na\', \'administrator\', \'2026-05-13 05:05:26\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "created_at", "updated_at") VALUES (:username:, :email:, :password_hash:, :role:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\Install.php(257): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Install->saveAdmin()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 05:56:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'cluster51'@'localhost' (using password: YES) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'cluster51', Object(SensitiveParameterValue), 'store', 3306, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-13 06:18:30 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=9652 in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'P:\\PortableApps...', 201)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('kb330480-001.ca...', 'cluster51', Object(SensitiveParameterValue), 'store', 35866, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#11 {main}
+ERROR - 2026-05-13 08:57:16 --> pg_query(): Query failed: ERROR:  column "is_active" of relation "ps_users" does not exist
+LINE 1: UPDATE "ps_users" SET "is_active" = TRUE, "activation_guid" ...
+                              ^
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "ps_users" SET "is_active" = TRUE, "activation_guid" = NULL, "updated_at" = \'2026-05-13 08:57:15\'
+WHERE "role" = \'administrator\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "ps_users" SET "is_active" = TRUE, "activation_guid" = NULL, "updated_at" = \'2026-05-13 08:57:15\'
+WHERE "role" = \'administrator\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE "ps_users" SET "is_active" = :is_active:, "activation_guid" = :activation_guid:, "updated_at" = :updated_at:
+WHERE "role" = :role:', [...], false)
+ 4 Command line code(1): CodeIgniter\Database\BaseBuilder->update([...])
+CRITICAL - 2026-05-13 08:57:16 --> ErrorException: Uncaught ErrorException: pg_query(): Query failed: ERROR:  column "is_active" of relation "ps_users" does not exist
+LINE 1: UPDATE "ps_users" SET "is_active" = TRUE, "activation_guid" ...
+                              ^ in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:200
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'P:\\PortableApps...', 200)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'UPDATE "ps_user...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "ps_user...')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "ps_user...')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE "ps_user...', Array, false)
+#5 Command line code(1): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column "is_active" of relation "ps_users" does not exist
+LINE 1: UPDATE "ps_users" SET "is_active" = TRUE, "activation_guid" ...
+                              ^ in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:212
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "ps_user...')
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "ps_user...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE "ps_user...', Array, false)
+#3 Command line code(1): CodeIgniter\Database\BaseBuilder->update(Array)
+#4 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column "is_active" of relation "ps_users" does not exist
+LINE 1: UPDATE "ps_users" SET "is_active" = TRUE, "activation_guid" ...
+                              ^ in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php:865
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE "ps_user...', Array, false)
+#1 Command line code(1): CodeIgniter\Database\BaseBuilder->update(Array)
+#2 {main}
+  thrown
+[Method: CLI, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-05-13 09:43:12 --> pg_query(): Query failed: ERROR:  column "is_active" of relation "ps_roles" already exists
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('ALTER TABLE "ps_roles" ADD COLUMN is_active BOOLEAN NOT NULL DEFAULT TRUE')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE "ps_roles" ADD COLUMN is_active BOOLEAN NOT NULL DEFAULT TRUE')
+ 3 APPPATH\Libraries\RoleService.php(276): CodeIgniter\Database\BaseConnection->query('ALTER TABLE "ps_roles" ADD COLUMN is_active BOOLEAN NOT NULL DEFAULT TRUE')
+ 4 APPPATH\Libraries\RoleService.php(216): App\Libraries\RoleService->ensureRoleColumns(Object(CodeIgniter\Database\Postgre\Connection))
+ 5 APPPATH\Libraries\RoleService.php(40): App\Libraries\RoleService->ensureBaseRoles()
+ 6 Command line code(1): App\Libraries\RoleService->listRoles()
+CRITICAL - 2026-05-13 09:43:12 --> ErrorException: Uncaught ErrorException: pg_query(): Query failed: ERROR:  column "is_active" of relation "ps_roles" already exists in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:200
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'P:\\PortableApps...', 200)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php(200): pg_query(Object(PgSql\Connection), 'ALTER TABLE "ps...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('ALTER TABLE "ps...')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE "ps...')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(276): CodeIgniter\Database\BaseConnection->query('ALTER TABLE "ps...')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(216): App\Libraries\RoleService->ensureRoleColumns(Object(CodeIgniter\Database\Postgre\Connection))
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(40): App\Libraries\RoleService->ensureBaseRoles()
+#7 Command line code(1): App\Libraries\RoleService->listRoles()
+#8 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column "is_active" of relation "ps_roles" already exists in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:212
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('ALTER TABLE "ps...')
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE "ps...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(276): CodeIgniter\Database\BaseConnection->query('ALTER TABLE "ps...')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(216): App\Libraries\RoleService->ensureRoleColumns(Object(CodeIgniter\Database\Postgre\Connection))
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(40): App\Libraries\RoleService->ensureBaseRoles()
+#5 Command line code(1): App\Libraries\RoleService->listRoles()
+#6 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: pg_query(): Query failed: ERROR:  column "is_active" of relation "ps_roles" already exists in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php:865
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(276): CodeIgniter\Database\BaseConnection->query('ALTER TABLE "ps...')
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(216): App\Libraries\RoleService->ensureRoleColumns(Object(CodeIgniter\Database\Postgre\Connection))
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(40): App\Libraries\RoleService->ensureBaseRoles()
+#3 Command line code(1): App\Libraries\RoleService->listRoles()
+#4 {main}
+  thrown
+[Method: CLI, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-05-13 12:08:04 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;ps_users_username_key&quot;
+DETAIL:  Key (username)=(ImProVision.Man) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "profile_image", "is_active", "activation_guid", "deactivation_guid", "reset_guid", "last_login_at", "created_at", "updated_at") VALUES (\'ImProVision.Man\', \'ImProVision.Man@outlook.com\', \'$2y$10$0TPQeZPA.v7k56oRao.OS.ANgJ6xjIm9DTz4g2B1K257m2XoRekBa\', \'user\', NULL, FALSE, \'7c243031a06d9f99d6bd56ed7c7036c9\', \'cc5c3b14a815389f3cd44fb9b90f81b9\', NULL, NULL, \'2026-05-13 12:08:03\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "profile_image", "is_active", "activation_guid", "deactivation_guid", "reset_guid", "last_login_at", "created_at", "updated_at") VALUES (\'ImProVision.Man\', \'ImProVision.Man@outlook.com\', \'$2y$10$0TPQeZPA.v7k56oRao.OS.ANgJ6xjIm9DTz4g2B1K257m2XoRekBa\', \'user\', NULL, FALSE, \'7c243031a06d9f99d6bd56ed7c7036c9\', \'cc5c3b14a815389f3cd44fb9b90f81b9\', NULL, NULL, \'2026-05-13 12:08:03\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "profile_image", "is_active", "activation_guid", "deactivation_guid", "reset_guid", "last_login_at", "created_at", "updated_at") VALUES (:username:, :email:, :password_hash:, :role:, :profile_image:, :is_active:, :activation_guid:, :deactivation_guid:, :reset_guid:, :last_login_at:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\Member\User.php(110): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Member\User->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Member\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 12:10:59 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;ps_users_username_key&quot;
+DETAIL:  Key (username)=(ImProVision.Man) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "profile_image", "is_active", "activation_guid", "deactivation_guid", "reset_guid", "last_login_at", "created_at", "updated_at") VALUES (\'ImProVision.Man\', \'ImProVision.Man@outlook.com\', \'$2y$10$49vzGJFDioSHHL92Jk6LI.P.lDYIpC8mjRvS8hKJ85UyoDrTDYOUK\', \'user\', NULL, FALSE, \'c13c67cf388d11afdf10b8d3ee116369\', \'e11f0295c546b676e993c1c9f9c65ac3\', NULL, NULL, \'2026-05-13 12:10:57\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "profile_image", "is_active", "activation_guid", "deactivation_guid", "reset_guid", "last_login_at", "created_at", "updated_at") VALUES (\'ImProVision.Man\', \'ImProVision.Man@outlook.com\', \'$2y$10$49vzGJFDioSHHL92Jk6LI.P.lDYIpC8mjRvS8hKJ85UyoDrTDYOUK\', \'user\', NULL, FALSE, \'c13c67cf388d11afdf10b8d3ee116369\', \'e11f0295c546b676e993c1c9f9c65ac3\', NULL, NULL, \'2026-05-13 12:10:57\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ps_users" ("username", "email", "password_hash", "role", "profile_image", "is_active", "activation_guid", "deactivation_guid", "reset_guid", "last_login_at", "created_at", "updated_at") VALUES (:username:, :email:, :password_hash:, :role:, :profile_image:, :is_active:, :activation_guid:, :deactivation_guid:, :reset_guid:, :last_login_at:, :created_at:, :updated_at:)', [...], false)
+ 4 APPPATH\Controllers\Member\User.php(110): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Member\User->create()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Member\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 12:28:21 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#18 {main}
+CRITICAL - 2026-05-13 12:28:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: install/uninstall/next]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+ 4 APPPATH\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+ 5 APPPATH\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+ 6 APPPATH\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+ 7 APPPATH\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+ 8 APPPATH\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+ 9 APPPATH\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+10 SYSTEMPATH\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+11 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+12 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninstall/next', 'before')
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 12:29:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#18 {main}
+CRITICAL - 2026-05-13 12:29:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: install/uninstall]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+ 4 APPPATH\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+ 5 APPPATH\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+ 6 APPPATH\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+ 7 APPPATH\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+ 8 APPPATH\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+ 9 APPPATH\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+10 SYSTEMPATH\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+11 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+12 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninstall', 'before')
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 12:29:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#18 {main}
+CRITICAL - 2026-05-13 12:29:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: install/uninstall]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+ 4 APPPATH\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+ 5 APPPATH\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+ 6 APPPATH\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+ 7 APPPATH\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+ 8 APPPATH\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+ 9 APPPATH\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+10 SYSTEMPATH\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+11 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+12 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninstall', 'before')
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 12:29:26 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#18 {main}
+CRITICAL - 2026-05-13 12:29:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: install/uninstall/next]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+ 4 APPPATH\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+ 5 APPPATH\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+ 6 APPPATH\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+ 7 APPPATH\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+ 8 APPPATH\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+ 9 APPPATH\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+10 SYSTEMPATH\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+11 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+12 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninstall/next', 'before')
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 12:29:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#18 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#19 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore(Array)
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninsta...', 'before')
+#13 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#15 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#16 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#18 {main}
+CRITICAL - 2026-05-13 12:29:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: install/uninstall/next]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(1706): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FROM ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(1726): CodeIgniter\Database\BaseConnection->listTables()
+ 4 APPPATH\Libraries\RoleService.php(397): CodeIgniter\Database\BaseConnection->tableExists('roles')
+ 5 APPPATH\Libraries\RoleService.php(152): App\Libraries\RoleService->ensureBaseRoles()
+ 6 APPPATH\Libraries\RoleService.php(249): App\Libraries\RoleService->findRole('owner')
+ 7 APPPATH\Libraries\RoleService.php(244): App\Libraries\RoleService->hasLevelAtLeast('owner', 'administrator')
+ 8 APPPATH\Filters\InstallGuard.php(60): App\Libraries\RoleService->isAdministrator('owner')
+ 9 APPPATH\Filters\InstallGuard.php(38): App\Filters\InstallGuard->canAccessInstaller()
+10 SYSTEMPATH\Filters\Filters.php(241): App\Filters\InstallGuard->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+11 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+12 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('install/uninstall/next', 'before')
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
