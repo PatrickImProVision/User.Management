@@ -393,12 +393,23 @@ final class InstallationService
             return $missingTablesError;
         }
 
+        $targets = $this->extractInsertTargetTables($sql);
+        $prepareError = $this->preparePostgresRestoreTablesForReplay($db, $targets);
+        if ($prepareError !== null) {
+            return $prepareError;
+        }
+
         $accountFieldsError = $this->ensurePostgresUserAccountFields($db);
         if ($accountFieldsError !== null) {
             return $accountFieldsError;
         }
 
-        return $this->executeSqlScript($db, $sql);
+        $err = $this->executeSqlScript($db, $sql);
+        if ($err !== null) {
+            return $err;
+        }
+
+        return $this->syncPostgresSequencesAfterRestore($db, $targets);
     }
 
     public function hasExistingUserAccounts(): bool
@@ -555,6 +566,78 @@ final class InstallationService
         return 'Backup restore requires missing table(s): ' . implode(', ', $stillMissing)
             . '. Automatic preset SQL ran, but these physical table names still do not exist. Current DBPrefix: "'
             . ($prefix === '' ? '(empty)' : $prefix) . '".';
+    }
+
+    /**
+     * PostgreSQL uninstall backups are data-only. Preset SQL may have seeded rows, so clear
+     * the target tables before replaying backup INSERTs with explicit IDs.
+     *
+     * @param list<string> $targets
+     */
+    private function preparePostgresRestoreTablesForReplay(BaseConnection $db, array $targets): ?string
+    {
+        if (($db->DBDriver ?? '') !== 'Postgre' || $targets === []) {
+            return null;
+        }
+
+        $existing = $this->listAllPhysicalTables($db);
+        $tables = array_values(array_intersect($targets, $existing));
+        if ($tables === []) {
+            return null;
+        }
+
+        $tableList = implode(', ', array_map(
+            fn (string $table): string => $this->quoteTableIdentifier($db, $table),
+            $tables,
+        ));
+
+        try {
+            $db->query('TRUNCATE TABLE ' . $tableList . ' RESTART IDENTITY CASCADE');
+        } catch (Throwable $e) {
+            return $e->getMessage();
+        }
+
+        return null;
+    }
+
+    /**
+     * Explicit ID INSERTs do not advance PostgreSQL serial sequences.
+     *
+     * @param list<string> $targets
+     */
+    private function syncPostgresSequencesAfterRestore(BaseConnection $db, array $targets): ?string
+    {
+        if (($db->DBDriver ?? '') !== 'Postgre') {
+            return null;
+        }
+
+        foreach ($targets as $table) {
+            try {
+                if (! in_array('id', $db->getFieldNames($table), true)) {
+                    continue;
+                }
+
+                $row = $db->query('SELECT MAX("id") AS max_id FROM ' . $this->quoteTableIdentifier($db, $table))->getRowArray();
+                $max = (int) ($row['max_id'] ?? 0);
+                if ($max <= 0) {
+                    continue;
+                }
+
+                $sequence = $db->query(
+                    'SELECT pg_get_serial_sequence(' . $db->escape($table) . ', ' . $db->escape('id') . ') AS sequence_name',
+                )->getRowArray();
+                $sequenceName = (string) ($sequence['sequence_name'] ?? '');
+                if ($sequenceName === '') {
+                    continue;
+                }
+
+                $db->query('SELECT setval(' . $db->escape($sequenceName) . ', ' . $max . ', true)');
+            } catch (Throwable $e) {
+                return $e->getMessage();
+            }
+        }
+
+        return null;
     }
 
     /**

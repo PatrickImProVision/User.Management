@@ -656,3 +656,37 @@ in SYSTEMPATH\Database\BaseConnection.php on line 606.
 15 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 16 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 17 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 12:45:07 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;ps_roles_pkey&quot;
+DETAIL:  Key (id)=(1) already exists.
+in SYSTEMPATH\Database\Postgre\Connection.php on line 200.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'1\',\'guest\',\'Guest\',\'Public visitor access before login.\',\'0\',\'t\',\'t\',\'2026-05-13 12:28:18\',NULL)')
+ 2 APPPATH\Libraries\InstallationService.php(662): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'1\',\'guest\',\'Guest\',\'Public visitor access before login.\',\'0\',\'t\',\'t\',\'2026-05-13 12:28:18\',NULL)')
+ 3 APPPATH\Libraries\InstallationService.php(401): App\Libraries\InstallationService->executeSqlScript(Object(CodeIgniter\Database\Postgre\Connection), '-- Product Store backup 2026-05-13T12:43:50+00:00
+-- DBPrefix (Config\\Database): ps_
+-- Physical table identifiers (prefix + logical name as stored in the database):
+--   ps_roles
+--   ps_users
+
+-- Table ps_roles (data rows only — run preset install SQL first so tables exist.)
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'1\',\'guest\',\'Guest\',\'Public visitor access before login.\',\'0\',\'t\',\'t\',\'2026-05-13 12:28:18\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'2\',\'user\',\'User\',\'Standard member access to account and profile features.\',\'1\',\'t\',\'t\',\'2026-05-13 12:28:18\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'11\',\'analyst\',\'Analyst\',\'Reviews reports and data-focused workflows when enabled.\',\'2\',\'f\',\'f\',\'2026-05-13 12:28:19\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'3\',\'author\',\'Author\',\'Creates owned content drafts when content features are enabled.\',\'3\',\'t\',\'t\',\'2026-05-13 12:28:18\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'8\',\'editor\',\'Editor\',\'Edits and organizes content when content features are enabled.\',\'4\',\'f\',\'f\',\'2026-05-13 12:28:19\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'9\',\'reviewer\',\'Reviewer\',\'Reviews and approves content before publication when enabled.\',\'5\',\'f\',\'f\',\'2026-05-13 12:28:19\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'4\',\'moderator\',\'Moderator\',\'Moderates community content and user activity when enabled.\',\'6\',\'t\',\'t\',\'2026-05-13 12:28:18\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'10\',\'support\',\'Support\',\'Assists users and support workflows when enabled.\',\'7\',\'f\',\'f\',\'2026-05-13 12:28:19\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'5\',\'administrator\',\'Administrator\',\'Manages users, roles, and settings below administrator level.\',\'8\',\'t\',\'t\',\'2026-05-13 12:28:18\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'7\',\'manager\',\'Manager\',\'Manages administrator-level operations below owner level.\',\'9\',\'f\',\'f\',\'2026-05-13 12:28:18\',NULL);
+INSERT INTO "ps_roles" ("id","slug","name","description","level","is_system","is_active","created_at","updated_at") VALUES (\'6\',\'owner\',\'Owner\',\'Full application ownership and highest-level role management.\',\'10\',\'t\',\'t\',\'2026-05-13 12:28:18\',NULL);
+
+-- Table ps_users (data rows only — run preset install SQL first so tables exist.)
+INSERT INTO "ps_users" ("id","username","email","password_hash","role","profile_image","is_active","activation_guid","deactivation_guid","reset_guid","last_login_at","created_at","updated_at") VALUES (\'1\',\'ImProVision.Man\',\'ImProVision.Man@outlook.com\',\'$2y$10$VGNTcn5kCAHNRWi02eo8cu4rOmZFCaqTZdNbFKXP.WGU3AWPDd9XC\',\'owner\',\'uploads/user-images/1778676002_0c1df34f1c78472fb29c.jpg\',\'t\',NULL,\'73d3ad1e9c36aa77e708d4dd18a4e41d\',NULL,\'2026-05-13 12:42:51\',\'2026-05-13 12:39:13\',\'2026-05-13 12:42:51\');')
+ 4 APPPATH\Controllers\Install.php(303): App\Libraries\InstallationService->restoreFromWritableUninstallBackup('uninstall_2026-05-13_124350.sql')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Install->runSchema()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
