@@ -48,6 +48,7 @@ $mode = ($mode ?? 'install') === 'restore' ? 'restore' : 'install';
                 <input type="number" name="port" id="port" value="<?= old('port', '3306', 'attr') ?>">
             </div>
         </div>
+        <p class="hint" id="port-hint" style="margin-top:0.15rem;"></p>
 
         <div id="schema-wrap" style="display:none;">
             <label for="schema">PostgreSQL schema</label>
@@ -101,6 +102,7 @@ $mode = ($mode ?? 'install') === 'restore' ? 'restore' : 'install';
     const passwordToggle = document.getElementById('password-toggle');
     const dbLabel = document.getElementById('database-label');
     const dbHint = document.getElementById('database-hint');
+    const portHint = document.getElementById('port-hint');
     const database = document.getElementById('database');
 
     function sync(fromDriverChange) {
@@ -132,6 +134,11 @@ $mode = ($mode ?? 'install') === 'restore' ? 'restore' : 'install';
         dbHint.textContent = isSql
             ? 'Absolute path to the SQLite file. The directory must exist and be writable.'
             : '';
+        if (portHint) {
+            portHint.textContent = d === 'Postgre'
+                ? 'Use your provider port. It may be different from 5432.'
+                : '';
+        }
     }
     driver.addEventListener('change', function () {
         sync(true);

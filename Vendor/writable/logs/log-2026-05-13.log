@@ -690,3 +690,93 @@ INSERT INTO "ps_users" ("id","username","email","password_hash","role","profile_
  9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps\\XamppPortable\\App\\Xampp\\htdocs\\Product.Store\\Vendor\\public\\index.php')
+ERROR - 2026-05-13 12:54:02 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;kb330480-001.ca.clouddb.ovh.net&quot; (54.39.135.10) and accepting
+	TCP/IP connections on port 5432? in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'P:\\PortableApps...', 78)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php(78): pg_connect('host=kb330480-0...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+ERROR - 2026-05-13 12:54:25 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;kb330480-001.ca.clouddb.ovh.net&quot; (54.39.135.10) and accepting
+	TCP/IP connections on port 5432? in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'P:\\PortableApps...', 78)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php(78): pg_connect('host=kb330480-0...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+ERROR - 2026-05-13 12:54:46 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;kb330480-001.ca.clouddb.ovh.net&quot; (54.39.135.10) and accepting
+	TCP/IP connections on port 5432? in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'P:\\PortableApps...', 78)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php(78): pg_connect('host=kb330480-0...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+ERROR - 2026-05-13 12:55:08 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;kb330480-001.ca.clouddb.ovh.net&quot; (54.39.135.10) and accepting
+	TCP/IP connections on port 5432? in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'P:\\PortableApps...', 78)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php(78): pg_connect('host=kb330480-0...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}
+ERROR - 2026-05-13 12:55:29 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection timed out (0x0000274C/10060)
+	Is the server running on host &quot;kb330480-001.ca.clouddb.ovh.net&quot; (54.39.135.10) and accepting
+	TCP/IP connections on port 5432? in P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php:78
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', 'P:\\PortableApps...', 78)
+#1 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\Postgre\Connection.php(78): pg_connect('host=kb330480-0...')
+#2 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(555): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#4 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Libraries\InstallationService.php(60): CodeIgniter\Database\BaseConnection->query('SELECT 1 AS ok')
+#5 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\app\Controllers\Install.php(164): App\Libraries\InstallationService->testConnection(Array)
+#6 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(951): App\Controllers\Install->testConnection()
+#7 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Install))
+#8 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\Vendor\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 P:\PortableApps\XamppPortable\App\Xampp\htdocs\Product.Store\index.php(13): require('P:\\PortableApps...')
+#13 {main}

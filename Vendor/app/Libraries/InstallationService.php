@@ -53,6 +53,9 @@ final class InstallationService
         $merged   = array_merge($defaults, $cfg);
         $merged   = self::normalizePostgresClientEncoding($merged);
         $merged['DBDebug'] = false;
+        if ($driver === 'Postgre' && empty($merged['connect_timeout'])) {
+            $merged['connect_timeout'] = '5';
+        }
 
         try {
             // Trial connection only: merged POST data overrides Config\Database defaults.
@@ -64,7 +67,12 @@ final class InstallationService
 
             return null;
         } catch (Throwable $e) {
-            return $e->getMessage();
+            $message = $e->getMessage();
+            if ($driver === 'Postgre' && str_contains(strtolower($message), 'timed out')) {
+                return 'Connection timed out. Check the PostgreSQL host and port. Some providers use a custom port instead of 5432.';
+            }
+
+            return $message;
         }
     }
 
